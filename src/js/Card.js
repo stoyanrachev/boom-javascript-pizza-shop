@@ -38,6 +38,7 @@ export default class Card extends EventEmitter {
 
     this.container.innerHTML = template;
     this.container.addEventListener("click", () => {
+     // console.log("click");
       this.emit(Card.events.ADD_TO_CART, {
         type: this._type,
         price: this._price,
