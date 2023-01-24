@@ -32,4 +32,7 @@ export default class Notification {
   onDelete() {
     this.notificationsContainer.removeChild(this.container);
   }
+  empty(){
+    this.notificationsContainer.innerHTML="";
+  }
 }
